@@ -19,7 +19,7 @@ const EDUCATION = [
 
 const CERTIFICATIONS = [
   {
-    href: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=102793391OCI25AICFA',
+    href: '/certs/oracle-cloud-ai-foundations.jpg',
     icon: '☁️',
     name: 'Oracle Cloud Infrastructure AI Foundations Associate (2025)',
     by: 'Oracle',
@@ -27,7 +27,7 @@ const CERTIFICATIONS = [
     id: 'Credential ID: 102793391OCI25AICFA',
   },
   {
-    href: 'https://www.anthropic.com/education/certificates/ckzytwcibvq4',
+    href: '/certs/anthropic-ai-fluency.jpg',
     icon: '🧠',
     name: 'Certificate of Completion: AI Fluency Framework & Foundations',
     by: 'Anthropic',
@@ -35,7 +35,7 @@ const CERTIFICATIONS = [
     id: 'Credential ID: ckzytwcibvq4',
   },
   {
-    href: 'https://coursera.org/verify/APRL6B2WWY77',
+    href: '/certs/coursera-blockchain-scalability.pdf',
     icon: '🔗',
     name: 'Blockchain Scalability and its Foundations in Distributed Systems',
     by: 'Coursera — University of Sydney',
@@ -49,7 +49,7 @@ const CERTIFICATIONS = [
     by: 'Udemy',
   },
   {
-    href: 'https://verify.onwingspan.com',
+    href: '/certs/infosys-springboot.pdf',
     icon: '☕',
     name: 'Learning Spring Boot',
     by: 'Infosys Springboard',
