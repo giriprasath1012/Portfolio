@@ -2,8 +2,8 @@ backend:
   name: github
   repo: giriprasath1012/Portfolio
   branch: main
-  base_url: https://your-oauth-worker.workers.dev
-  auth_endpoint: auth
+  base_url: https://portfolio-decap-oauth.giriprasath1012.workers.dev
+  auth_endpoint: /auth
 
 local_backend: true
 publish_mode: simple
