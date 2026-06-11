@@ -1,3 +1,5 @@
+const BASE = import.meta.env.BASE_URL;
+
 const EDUCATION = [
   {
     year: '2021 — 2025',
@@ -19,7 +21,7 @@ const EDUCATION = [
 
 const CERTIFICATIONS = [
   {
-    href: '/certs/oracle-cloud-ai-foundations.jpg',
+    href: `${BASE}certs/oracle-cloud-ai-foundations.jpg`,
     icon: '☁️',
     name: 'Oracle Cloud Infrastructure AI Foundations Associate (2025)',
     by: 'Oracle',
@@ -27,7 +29,7 @@ const CERTIFICATIONS = [
     id: 'Credential ID: 102793391OCI25AICFA',
   },
   {
-    href: '/certs/anthropic-ai-fluency.jpg',
+    href: `${BASE}certs/anthropic-ai-fluency.jpg`,
     icon: '🧠',
     name: 'Certificate of Completion: AI Fluency Framework & Foundations',
     by: 'Anthropic',
@@ -35,7 +37,7 @@ const CERTIFICATIONS = [
     id: 'Credential ID: ckzytwcibvq4',
   },
   {
-    href: '/certs/coursera-blockchain-scalability.pdf',
+    href: `${BASE}certs/coursera-blockchain-scalability.pdf`,
     icon: '🔗',
     name: 'Blockchain Scalability and its Foundations in Distributed Systems',
     by: 'Coursera — University of Sydney',
@@ -49,7 +51,7 @@ const CERTIFICATIONS = [
     by: 'Udemy',
   },
   {
-    href: '/certs/infosys-springboot.pdf',
+    href: `${BASE}certs/infosys-springboot.pdf`,
     icon: '☕',
     name: 'Learning Spring Boot',
     by: 'Infosys Springboard',
