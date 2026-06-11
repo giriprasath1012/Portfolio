@@ -6,6 +6,7 @@ const metaText = key => hero.meta.find(m => m.key === key)?.text ?? '';
 
 export default function Hero() {
   const tw = useTypewriter(hero.typewriterLines);
+  const showPhoto = hero.showPhoto !== false;
 
   return (
     <section className="hero" id="hero">
@@ -16,7 +17,7 @@ export default function Hero() {
         <div className="orb orb-3"></div>
       </div>
       <div className="hero__inner">
-        <div className="hero__layout">
+        <div className={`hero__layout${showPhoto ? '' : ' hero__layout--solo'}`}>
 
           {/* LEFT: Text Content */}
           <div className="hero__text-col">
@@ -49,16 +50,17 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT: Full Standing Photo */}
-          <div className="hero__photo-col">
-            <div className="hero__photo-wrap">
-              <div className="hero__photo-glow"></div>
-              <img className="hero__photo" src={heroPhoto} alt="Giri Prasath V" />
-              <div className="hero__photo-fade"></div>
-              <div className="hero__photo-fade-r"></div>
-              <div className="hero__photo-border"></div>
+          {showPhoto && (
+            <div className="hero__photo-col">
+              <div className="hero__photo-wrap">
+                <div className="hero__photo-glow"></div>
+                <img className="hero__photo" src={heroPhoto} alt="Giri Prasath V" />
+                <div className="hero__photo-fade"></div>
+                <div className="hero__photo-fade-r"></div>
+                <div className="hero__photo-border"></div>
+              </div>
             </div>
-          </div>
+          )}
 
         </div>
       </div>

@@ -145,6 +145,7 @@ collections:
         label: Hero
         name: hero
         fields:
+          - { label: "Show Photo", name: showPhoto, widget: boolean, default: true, required: false }
           - { label: "Kicker Text", name: kicker, widget: string }
           - { label: Name, name: name, widget: string }
           - { label: "Name Suffix (italic)", name: nameSuffix, widget: string }
