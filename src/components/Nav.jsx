@@ -48,7 +48,7 @@ export default function Nav() {
           ))}
         </div>
         <div className="nav__cta">
-          <a href="mailto:giriprasath1012@gmail.com">Get in Touch →</a>
+          <a href="#contact">Get in Touch →</a>
         </div>
         <div className="nav__ham" id="ham" onClick={() => setOpen(o => !o)}>
           <span></span><span></span><span></span>
