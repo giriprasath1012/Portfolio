@@ -1,5 +1,5 @@
 {
-  "showPhoto": false,
+  "showPhoto": true,
   "kicker": "// Software Engineer · Full-Stack",
   "name": "Giri Prasath",
   "nameSuffix": "V",
@@ -12,8 +12,17 @@
     "Spring Boot Craftsman"
   ],
   "meta": [
-    { "key": "location", "text": "Coimbatore, India" },
-    { "key": "experience", "text": "1+ Year Experience" },
-    { "key": "awards", "text": "5+ Awards" }
+    {
+      "key": "location",
+      "text": "Coimbatore, India"
+    },
+    {
+      "key": "experience",
+      "text": "1+ Year Experience"
+    },
+    {
+      "key": "awards",
+      "text": "5+ Awards"
+    }
   ]
 }
