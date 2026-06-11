@@ -3,27 +3,60 @@
     {
       "label": "Languages",
       "cls": "g",
-      "items": ["Java", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"]
+      "items": [
+        "Java",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "label": "Frameworks & Libraries",
       "cls": "b",
-      "items": ["Spring Boot", "React JS", "React Native", "Angular", "Playwright", ".NET", "jQuery"]
+      "items": [
+        "Spring Boot",
+        "React JS",
+        "React Native",
+        "Angular",
+        "Playwright",
+        ".NET",
+        "jQuery"
+      ]
     },
     {
       "label": "Tools & Platforms",
       "cls": "v",
-      "items": ["Git / GitHub", "PostgreSQL", "MongoDB", "REST APIs", "Microservices", "CI/CD"]
+      "items": [
+        "Git / GitHub",
+        "PostgreSQL",
+        "MongoDB",
+        "REST APIs",
+        "Microservices",
+        "CI/CD"
+      ]
     },
     {
       "label": "Testing",
       "cls": "a",
-      "items": ["Playwright", "End-to-End Testing", "Regression Testing", "Smoke Testing", "Page Object Model (POM)"]
+      "items": [
+        "Playwright",
+        "End-to-End Testing",
+        "Regression Testing",
+        "Smoke Testing",
+        "Page Object Model (POM)"
+      ]
     },
     {
       "label": "Methodologies",
       "cls": "p",
-      "items": ["Agile / Scrum", "SDLC", "OOP", "Design Patterns", "RBAC"]
+      "items": [
+        "SDLC",
+        "OOP",
+        "Design Patterns",
+        "RBAC"
+      ]
     }
   ]
 }
