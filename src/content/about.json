@@ -1,0 +1,13 @@
+{
+  "bioParagraphs": [
+    "I'm a full-stack engineer at **Wissen Technology**, delivering production software for enterprise clients in fintech and HR domains. I work across the whole stack — from Spring Boot microservices to React Native mobile apps — and I care about clean architecture, not just shipped features.",
+    "I graduated from **Coimbatore Institute of Technology** with a CGPA of 8.58, and have been recognized multiple times by clients and leadership for delivery quality — including a Best Team Award and Director appreciation for shipping a complete product solo in under a month.",
+    "Off the keyboard: **chess** and **badminton** — both teach you to think several moves ahead and react with precision under pressure."
+  ],
+  "stats": [
+    { "target": "1", "suffix": "+", "float": false, "label": "Years Professional Exp." },
+    { "target": "5", "suffix": "+", "float": false, "label": "Awards & Recognitions" },
+    { "target": "8.58", "suffix": "", "float": true, "label": "CGPA / 10.0" },
+    { "target": "96", "suffix": "%", "float": false, "label": "HSC Score" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "href": "certs/oracle-cloud-ai-foundations.jpg",
+      "icon": "☁️",
+      "name": "Oracle Cloud Infrastructure AI Foundations Associate (2025)",
+      "by": "Oracle",
+      "meta": "Issued Oct 2025  ·  Expires Oct 2027",
+      "id": "Credential ID: 102793391OCI25AICFA"
+    },
+    {
+      "href": "certs/anthropic-ai-fluency.jpg",
+      "icon": "🧠",
+      "name": "Certificate of Completion: AI Fluency Framework & Foundations",
+      "by": "Anthropic",
+      "meta": "Issued May 2026",
+      "id": "Credential ID: ckzytwcibvq4"
+    },
+    {
+      "href": "certs/coursera-blockchain-scalability.pdf",
+      "icon": "🔗",
+      "name": "Blockchain Scalability and its Foundations in Distributed Systems",
+      "by": "Coursera — University of Sydney",
+      "meta": "Issued Nov 2023",
+      "id": "Verify: coursera.org/verify/APRL6B2WWY77"
+    },
+    {
+      "href": "https://www.udemy.com/certificate",
+      "icon": "🤖",
+      "name": "The Complete Prompt Engineering for AI Bootcamp",
+      "by": "Udemy",
+      "meta": "",
+      "id": ""
+    },
+    {
+      "href": "certs/infosys-springboot.pdf",
+      "icon": "☕",
+      "name": "Learning Spring Boot",
+      "by": "Infosys Springboard",
+      "meta": "Issued Nov 2024",
+      "id": ""
+    }
+  ]
+}

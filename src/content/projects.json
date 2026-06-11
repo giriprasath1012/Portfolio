@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "idx": "01 · Client Platform",
+      "title": "Client Onboarding Platform & System",
+      "desc": "A scalable onboarding system for Clearstreet supporting high-volume enterprise client registration and trading account setup. Refactored the entire Playwright test framework with the Page Object Model (POM), extending coverage to new business lines with minimal code changes. Developed backend microservices for email workflows and designed comprehensive E2E, regression, smoke, and edge-case suites that directly reduced production incidents.",
+      "stack": ["Playwright", "TypeScript", "Java", "Spring Boot", "PostgreSQL"],
+      "delay": ""
+    },
+    {
+      "idx": "02 · UI Library",
+      "title": "Razer Reusable Components",
+      "desc": "Led end-to-end design and development of a reusable UI component library for Commence.ai, delivered solo within a single month — a milestone personally appreciated by the Director. Established component patterns through deep UI/UX analysis, ensuring visual consistency and accessibility across multiple client-facing applications. Iterated on components based on direct client feedback, reducing front-end dev time on future projects.",
+      "stack": [".NET", "HTML", "CSS", "JavaScript", "jQuery"],
+      "delay": "d1"
+    },
+    {
+      "idx": "03 · Mobile App",
+      "title": "WiseEngage",
+      "desc": "An enterprise mobile productivity platform built at Wissen Technology using React Native and TypeScript. Features the 1-1 Discussions module — enabling managers to initiate, schedule, and document structured one-on-one meetings with direct reports across the org hierarchy. Includes a meeting tracking and completion monitoring module that improves organizational visibility and managerial accountability across reporting lines.",
+      "stack": ["React Native", "TypeScript"],
+      "delay": "d2"
+    },
+    {
+      "idx": "04 · HR Platform",
+      "title": "HolidayHub — Holiday Management System",
+      "desc": "A full-stack Holiday Management System built for multiple enterprise clients, handling holiday tracking, entitlement management, and HR workflows. Features role-based access control (RBAC) for HR roles, client-specific calendar management, automated entitlement calculation, and a notification system to alert employees and HR on policy updates — cutting manual coordination overhead significantly.",
+      "stack": ["Java", "Spring Boot", "PostgreSQL", "React JS", "RBAC"],
+      "delay": "d3"
+    },
+    {
+      "idx": "05 · Blockchain",
+      "title": "Blockchain Based File Storing & Sharing",
+      "desc": "The \"Blockchain File System\" transforms cloud file sharing with decentralized storage, blockchain security, and smart contracts on Ethereum for enhanced privacy, immutability, and granular access control — putting users in full ownership of their data without relying on centralized servers.",
+      "stack": ["AWS", "Solidity", "React", "Ethereum", "Smart Contracts"],
+      "delay": "d2"
+    },
+    {
+      "idx": "06 · Healthcare",
+      "title": "Health Care & Appointment Booking",
+      "desc": "A mobile application that facilitates patients in booking appointments, scheduling lab tests, and ordering medications — all in one place. Features automated confirmation messages sent upon successful bookings, reducing manual follow-ups and improving the overall healthcare experience.",
+      "stack": ["Android Studio", "SQLite"],
+      "delay": "d3"
+    }
+  ]
+}

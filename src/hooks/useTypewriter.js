@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const LINES = [
+const DEFAULT_LINES = [
   'Full-Stack Developer',
   'Backend Microservices Engineer',
   'React Native Builder',
@@ -8,7 +8,7 @@ const LINES = [
   'Spring Boot Craftsman',
 ];
 
-export default function useTypewriter() {
+export default function useTypewriter(lines = DEFAULT_LINES) {
   const [text, setText] = useState('');
 
   useEffect(() => {
@@ -16,11 +16,11 @@ export default function useTypewriter() {
     let timeoutId;
 
     function type() {
-      const cur = LINES[li];
+      const cur = lines[li];
       if (del) {
         ci--;
         setText(cur.slice(0, ci));
-        if (ci === 0) { del = false; li = (li + 1) % LINES.length; }
+        if (ci === 0) { del = false; li = (li + 1) % lines.length; }
         timeoutId = setTimeout(type, del ? 38 : 360);
       } else {
         ci++;
@@ -32,7 +32,7 @@ export default function useTypewriter() {
 
     timeoutId = setTimeout(type, 1600);
     return () => clearTimeout(timeoutId);
-  }, []);
+  }, [lines]);
 
   return text;
 }

@@ -1,0 +1,222 @@
+backend:
+  name: github
+  repo: giriprasath1012/Portfolio
+  branch: main
+  base_url: https://your-oauth-worker.workers.dev
+  auth_endpoint: auth
+
+local_backend: true
+publish_mode: simple
+
+media_folder: "public/certs"
+public_folder: "/Portfolio/certs"
+
+site_url: https://giriprasath1012.github.io/Portfolio/
+display_url: https://giriprasath1012.github.io/Portfolio/
+
+collections:
+  - name: education
+    label: "Education & Certifications"
+    files:
+      - file: "src/content/education.json"
+        label: "Education"
+        name: education
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: Year, name: year, widget: string }
+              - { label: Degree, name: degree, widget: string }
+              - { label: School, name: school, widget: string }
+              - { label: Score, name: score, widget: string }
+              - { label: "Score Suffix", name: scoreSuffix, widget: string }
+              - { label: Label, name: label, widget: string }
+      - file: "src/content/certifications.json"
+        label: Certifications
+        name: certifications
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Link / File", name: href, widget: string, hint: "Relative path under public/ (e.g. certs/foo.pdf) or full https:// URL" }
+              - { label: "Icon (emoji)", name: icon, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: "Issued By", name: by, widget: string }
+              - { label: Meta, name: meta, widget: string, required: false, default: "" }
+              - { label: "Credential ID / Verify", name: id, widget: string, required: false, default: "" }
+
+  - name: skills
+    label: Skills
+    files:
+      - file: "src/content/skills.json"
+        label: Skills
+        name: skills
+        fields:
+          - label: Categories
+            name: categories
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - label: "Tag Color"
+                name: cls
+                widget: select
+                options:
+                  - { label: Green, value: g }
+                  - { label: Blue, value: b }
+                  - { label: Violet, value: v }
+                  - { label: Amber, value: a }
+                  - { label: Pink, value: p }
+              - label: Skills
+                name: items
+                widget: list
+                field: { label: Skill, name: item, widget: string }
+
+  - name: experience
+    label: Experience
+    files:
+      - file: "src/content/experience.json"
+        label: "Experience Timeline"
+        name: experience
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Date Range", name: date, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Company, name: company, widget: string }
+
+  - name: projects
+    label: Projects
+    files:
+      - file: "src/content/projects.json"
+        label: Projects
+        name: projects
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Index Label", name: idx, widget: string, hint: "e.g. '01 · Client Platform'" }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - label: "Tech Stack"
+                name: stack
+                widget: list
+                field: { label: Tech, name: tech, widget: string }
+              - label: "Animation Delay"
+                name: delay
+                widget: select
+                options:
+                  - { label: None, value: "" }
+                  - { label: "Delay 1", value: d1 }
+                  - { label: "Delay 2", value: d2 }
+                  - { label: "Delay 3", value: d3 }
+
+  - name: achievements
+    label: Achievements
+    files:
+      - file: "src/content/achievements.json"
+        label: Achievements
+        name: achievements
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Icon (emoji)", name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - label: "Animation Delay"
+                name: delay
+                widget: select
+                options:
+                  - { label: None, value: "" }
+                  - { label: "Delay 1", value: d1 }
+                  - { label: "Delay 2", value: d2 }
+                  - { label: "Delay 3", value: d3 }
+
+  - name: hero
+    label: "Hero Section"
+    files:
+      - file: "src/content/hero.json"
+        label: Hero
+        name: hero
+        fields:
+          - { label: "Kicker Text", name: kicker, widget: string }
+          - { label: Name, name: name, widget: string }
+          - { label: "Name Suffix (italic)", name: nameSuffix, widget: string }
+          - { label: Bio, name: bio, widget: text }
+          - label: "Typewriter Lines (rotating roles)"
+            name: typewriterLines
+            widget: list
+            field: { label: Line, name: line, widget: string }
+          - label: "Meta Items"
+            name: meta
+            widget: list
+            fields:
+              - label: Key
+                name: key
+                widget: select
+                options:
+                  - { label: Location, value: location }
+                  - { label: Experience, value: experience }
+                  - { label: Awards, value: awards }
+              - { label: Text, name: text, widget: string }
+
+  - name: about
+    label: "About Section"
+    files:
+      - file: "src/content/about.json"
+        label: About
+        name: about
+        fields:
+          - label: "Bio Paragraphs"
+            name: bioParagraphs
+            widget: list
+            hint: "Use **double asterisks** to highlight a phrase"
+            field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Stats
+            name: stats
+            widget: list
+            fields:
+              - { label: "Target Number", name: target, widget: string }
+              - { label: Suffix, name: suffix, widget: string, required: false, default: "" }
+              - { label: "Animate as decimal", name: float, widget: boolean, default: false, required: false }
+              - { label: Label, name: label, widget: string }
+
+  - name: contact
+    label: "Contact Section"
+    files:
+      - file: "src/content/contact.json"
+        label: Contact
+        name: contact
+        fields:
+          - { label: "Intro Text", name: intro, widget: text }
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: "Key (do not change)"
+                name: key
+                widget: select
+                options:
+                  - { label: Email, value: email }
+                  - { label: LinkedIn, value: linkedin }
+                  - { label: GitHub, value: github }
+                  - { label: Phone, value: phone }
+              - { label: "URL / href", name: href, widget: string }
+              - { label: "Display Label", name: label, widget: string }
+
+  - name: footer
+    label: Footer
+    files:
+      - file: "src/content/footer.json"
+        label: Footer
+        name: footer
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Year, name: year, widget: string }
+          - { label: Email, name: email, widget: string }

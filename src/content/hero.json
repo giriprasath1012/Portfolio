@@ -1,0 +1,18 @@
+{
+  "kicker": "// Software Engineer · Full-Stack",
+  "name": "Giri Prasath",
+  "nameSuffix": "V",
+  "bio": "Associate Software Engineer at Wissen Technology, building enterprise software for global clients. My stack spans Java microservices to React Native mobile — I care as much about what's under the hood as what's on the screen.",
+  "typewriterLines": [
+    "Full-Stack Developer",
+    "Backend Microservices Engineer",
+    "React Native Builder",
+    "Test Automation Expert",
+    "Spring Boot Craftsman"
+  ],
+  "meta": [
+    { "key": "location", "text": "Coimbatore, India" },
+    { "key": "experience", "text": "1+ Year Experience" },
+    { "key": "awards", "text": "5+ Awards" }
+  ]
+}

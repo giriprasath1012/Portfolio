@@ -1,8 +1,4 @@
-const TIMELINE = [
-  { date: '03 / 2026 — Present',    role: 'Associate Software Engineer', company: 'Wissen Technology' },
-  { date: '06 / 2025 — 03 / 2026',  role: 'Trainee Analyst',             company: 'Wissen Technology' },
-  { date: '01 / 2025 — 06 / 2025',  role: 'Software Engineer Intern',    company: 'Wissen Technology' },
-];
+import experience from '../content/experience.json';
 
 export default function Experience() {
   return (
@@ -13,8 +9,8 @@ export default function Experience() {
         <p className="section-sub reveal d1">Delivering production software for enterprise clients across fintech and HR domains.</p>
 
         <div className="timeline reveal d2">
-          {TIMELINE.map(item => (
-            <div className="tl-item" key={item.date}>
+          {experience.items.map((item, i) => (
+            <div className="tl-item" key={i}>
               <div className="tl-dot"></div>
               <div className="tl-date">{item.date}</div>
               <div className="tl-role">{item.role}</div>
